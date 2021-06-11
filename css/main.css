@@ -147,16 +147,27 @@ html {
   .page__logo > img {
     width: 60px;
     height: 75px;
-    top: -7px;
-    left: 0;
+    top: 0;
+  }
+  .header__box > .container {
+    position: relative;
   }
   .page__logo {
-    display: none;
+    position: absolute;
+    top: 13px;
+    left: calc(50% - 30px);
   }
-  .header__box {
-    z-index: 1;
-    background-image: url(../img/logo_png1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+@media (max-width: 450px) {
+  .page__logo > img {
+    width: 50px;
+    height: 65px;
+  }
+  .page__logo {
+    top: 6px;
+    left: calc(50% - 25px);
+  }
+  .page__link {
+    margin: 8px 20px;
   }
 }
