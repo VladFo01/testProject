@@ -98,11 +98,65 @@ html {
 }
 .page__logo {
   position: relative;
-  width: 100px;
+  width: 78px;
 }
 .page__logo > img {
   display: block;
   position: absolute;
   top: -15px;
   left: 0;
+}
+@media (max-width: 950px) {
+  .page__logo {
+    width: 70px;
+  }
+  .page__logo > img {
+    width: 70px;
+    height: 90px;
+    top: -7px;
+  }
+  .page__languages, .user, .phone {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    padding-top: 0;
+  }
+  .header__box {
+    padding: 0;
+  }
+  .page__links, .page__nav {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    flex-basis: 50%;
+  }
+  .menu {
+    align-self: flex-end;
+  }
+  .page__link {
+    margin: 15px 20px;
+  }
+  .header__box > .container {
+    margin: 0;
+  }
+  .btn {
+    border-radius: 0;
+    width: 100%;
+  }
+  .page__logo > img {
+    width: 60px;
+    height: 75px;
+    top: -7px;
+    left: 0;
+  }
+  .page__logo {
+    display: none;
+  }
+  .header__box {
+    z-index: 1;
+    background-image: url(../img/logo_png1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
